@@ -1,5 +1,8 @@
 # Working with Blueprints
 
+1. TOC
+{:toc}
+
 Blueprints are Beaker's unit of executable code. A blueprint combines a Docker image with metadata,
 such as its author and description, and an optional richer narrative in markdown. Please refer to
 [the wordcount example](https://beaker-pub.allenai.org/bp/bp_qbjvcda1sed7) for an overview.
