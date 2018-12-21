@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Experiments
+parent: User's Guide
 nav_order: 22
 ---
 
