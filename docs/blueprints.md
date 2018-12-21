@@ -1,3 +1,9 @@
+---
+layout: default
+title: Working with Blueprints
+nav_order: 5
+---
+
 # Working with Blueprints
 
 1. TOC
