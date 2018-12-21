@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigation Structure
+title: Beaker Groups
 nav_order: 3
 ---
 
