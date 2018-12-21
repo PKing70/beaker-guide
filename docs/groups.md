@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Groups
-nav_order: 6
+nav_exclude: true
 ---
 
 # Groups
