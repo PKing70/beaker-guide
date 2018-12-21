@@ -1,3 +1,9 @@
+---
+layout: default
+title: Working with Datasets
+nav_order: 4
+---
+
 # Working with Datasets
 
 The following example shows how to create and use datasets. Beaker takes the view that all datasets
