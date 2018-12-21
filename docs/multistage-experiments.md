@@ -1,3 +1,8 @@
+---
+layout: default
+title: Multistage Experiments
+nav_order: 7
+---
 
 # Multistage Experiments
 
