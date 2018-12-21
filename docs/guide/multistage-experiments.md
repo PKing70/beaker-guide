@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Multistage Experiments
+parent: User's Guide
 nav_order: 28
 ---
 
