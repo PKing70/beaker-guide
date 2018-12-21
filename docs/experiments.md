@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Blueprints
-nav_order: 5
+title: Experiments
+nav_order: 2
 ---
 
-# Blueprints
+# Experiments
 
 1. TOC
 {:toc}

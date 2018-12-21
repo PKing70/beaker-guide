@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Working with Datasets
+title: Datasets
 nav_order: 4
 ---
 
-# Working with Datasets
+# Datasets
 
 The following example shows how to create and use datasets. Beaker takes the view that all datasets
 are files at their core. Datasets may be one file or many, large or small; Beaker makes as few

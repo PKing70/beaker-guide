@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Working with Blueprints
+title: Beaker User's Guide
 nav_order: 1
 ---
 
-# Beaker from index.md in gh_pages
+# Beaker User's Guide
 
 [Beaker](https://beaker-pub.allenai.org) is a collaborative platform for
 rapid, reproducible research.
