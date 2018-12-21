@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Working with Blueprints
+title: Blueprints
 nav_order: 5
 ---
 
-# Working with Blueprints
+# Blueprints
 
 1. TOC
 {:toc}
