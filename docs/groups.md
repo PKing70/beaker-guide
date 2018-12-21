@@ -1,3 +1,9 @@
+---
+layout: default
+title: Navigation Structure
+nav_order: 3
+---
+
 # Beaker Groups
 
 ### What is a group?
