@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Beaker Groups
+title: Groups
 nav_order: 6
 ---
 
-# Beaker Groups
+# Groups
 
 ### What is a group?
 Groups are the way to organize your experiments and compare results across experiments. In addition to being a means of organizing similar experiments, groups allow you to compare the inputs and outputs of the experiments within the group, using metric and environment variable data from each task. Metric data is extracted from the `metrics.json` file in each experiment's result dataset, and environment variable data comes from the experiment's spec.
