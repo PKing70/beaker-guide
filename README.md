@@ -1,3 +1,9 @@
+---
+layout: default
+title: 404
+nav_exclude: true
+---
+
 # Beaker
 
 [Beaker](https://beaker-pub.allenai.org) is a collaborative platform for
