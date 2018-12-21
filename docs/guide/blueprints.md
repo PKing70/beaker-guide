@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blueprints
+parent: User's Guide
 nav_order: 24
 ---
 
