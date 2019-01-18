@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Count words in parallel
+title: Count Words in Parallel
 parent: Examples
 nav_order: 42
 ---
 
-# Count words in parallel
+# Count Words in Parallel
 
 This example uses two blueprints:
 1. `example/wordcount`: Counts all words in the `/input` directory and produces a `word_count` metric.
