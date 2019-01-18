@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blueprints
+title: Beaker help
 parent: Command Line Interface
 nav_order: 62
 ---
