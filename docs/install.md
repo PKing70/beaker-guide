@@ -9,11 +9,13 @@ nav_order: 10
 There are a few different ways to install Beaker:
 
 - Download a
-[release](https://github.com/allenai/beaker/releases) and extract it to your path:
+[release](https://github.com/allenai/beaker/releases) and extract it:
 
     ```bash
     tar -xvzf beaker_*.tar.gz -C /usr/local/bin
     ```
+    
+    Place the binary executable in your PATH (e.g., /usr/local/bin/ or ~/bin)
 
 - Apple macOS users can install Beaker through [Homebrew](https://brew.sh/) with a custom tap:
 
@@ -28,27 +30,6 @@ There are a few different ways to install Beaker:
     go get -u github.com/allenai/beaker/...
     ```
 
-## Getting Started
 
-1. Create an account at [beaker-pub.allenai.org](https://beaker-pub.allenai.org)
-   and follow the instructions in your [account settings](https://beaker-pub.allenai.org/user).
-
-   These instructions will guide you through installing and configuring the
-   Beaker CLI. See [below](#install-beaker-cli) for more options.
-   
-   Request "Scientist" or higher credentials from a Beaker admin to get authorization
-   to create experiments.
-
-2. Run your first experiment. The following example
-   [counts words](https://beaker-pub.allenai.org/bp/bp_qbjvcda1sed7) in the text
-   of [Moby Dick](https://beaker-pub.allenai.org/ds/ds_1hz9k6sgxi0a).
-
-    ```bash
-    beaker experiment run \
-      --name wordcount-moby \
-      --blueprint examples/wordcount \
-      --source examples/moby:/input \
-      --result-path /output
-    ```
 
 
