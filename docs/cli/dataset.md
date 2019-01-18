@@ -7,8 +7,32 @@ nav_order: 54
 
 # Beaker dataset
 
-Blueprints are Beaker's unit of executable code. A blueprint combines a Docker image with metadata,
-such as its author and description, and an optional richer narrative in markdown. Please refer to
-[the wordcount example](https://beaker-pub.allenai.org/bp/bp_qbjvcda1sed7) for an overview.
+```
+usage: beaker dataset [<flags>] <command> [<args> ...]
 
-Like datasets, blueprints are immutable. The following example shows how to create and use blueprints.
+Manage datasets
+
+Flags:
+  -h, --help     Show context-sensitive help (also try --help-long and
+                 --help-man).
+  -v, --version  Show application version.
+      --debug    Print verbose stack traces on error.
+      --addr="https://beaker-pub.allenai.org"  
+                 Address of the Beaker service.
+
+Subcommands:
+  create [<flags>] <source>
+    Create a new dataset
+
+  fetch --output=OUTPUT <dataset>
+    Fetch an existing dataset
+
+  rename [<flags>] <dataset> <new-name>
+    Rename an dataset
+
+  stream-file [<flags>] <dataset> [<file>]
+    Stream a single file from an existing dataset to stdout
+
+  inspect [<flags>] <dataset>...
+    Display detailed information about one or more datasets
+ ```
