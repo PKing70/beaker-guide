@@ -3,7 +3,7 @@ layout: default
 title: How To Use Beaker
 nav_order: 30
 has_children: true
-permalink: /docs/howto
+permalink: /docs/guide
 ---
 
 # How To Use Beaker
