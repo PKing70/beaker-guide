@@ -2,7 +2,7 @@
 layout: default
 title: Datasets
 parent: How To Use Beaker
-nav_order: 26
+nav_exclude: true
 ---
 
 # Datasets
