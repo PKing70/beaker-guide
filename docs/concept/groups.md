@@ -2,7 +2,7 @@
 layout: default
 title: Groups
 parent: Concepts
-nav_exclude: true
+nav_order: 28
 ---
 
 # Groups
