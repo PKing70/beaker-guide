@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Experiments
-parent: How To Use Beaker
 nav_exclude: true
 ---
 
