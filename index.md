@@ -4,20 +4,16 @@ title: Beaker Documentation
 nav_order: 1
 ---
 
-# Beaker Documentation
-
-Roadmap here?
+# Users Guide
 
 [Beaker](https://beaker-pub.allenai.org) is a collaborative platform for
 rapid, reproducible research.
 
-[Link to readme](README.md)
+Here is an overview of the Beaker documentation:
 
-[Link to about](about.md)
-
-[Link to brandnew](brandnew.md)
-
-[Link to theme demo](style.md)
-
-[Link to test](test.html)
+| Start | Learn | Use | Look Up   | Resources |
+| ----- | ----- | --- | --------- | --------- |
+| Install |  Blueprints | How To    | FAQ | Licenses    | 
+| Configure Docker |  Datasets | Examples    | UI Reference | Terms of Use    | beaker    | 
+| Your First Experiment |  Experiments |    |  Commands |     | beaker    | 
 
