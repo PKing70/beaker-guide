@@ -2,7 +2,7 @@
 layout: default
 title: Experiments
 parent: How To Use Beaker
-nav_order: 22
+nav_exclude: true
 ---
 
 # Experiments
