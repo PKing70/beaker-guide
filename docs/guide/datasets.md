@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Datasets
-parent: User's Guide
+parent: How To Use Beaker
 nav_order: 26
 ---
 
