@@ -15,7 +15,7 @@ There are a few different ways to install Beaker:
     tar -xvzf beaker_*.tar.gz -C /usr/local/bin
     ```
     
-    Place the binary executable in your PATH (e.g., /usr/local/bin/ or ~/bin)
+    Place the binary executable in your PATH (e.g., /usr/local/bin/ or ~/bin).
 
 - Apple macOS users can install Beaker through [Homebrew](https://brew.sh/) with a custom tap:
 
