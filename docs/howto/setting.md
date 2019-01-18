@@ -7,4 +7,14 @@ nav_order: 32
 
 # Settings
 
-Beaker overview, purpose, architecture diagrams, components eg. what is an experiment, blueprint? Essentially an overview of the platform in whitepaper style.
+## User Details
+
+To edit details such as **Name** or **Institution**, click the pencil icon next to the item and enter a new value.
+
+**Note:** You can see your unique ID in this box.
+
+## User Token
+
+To get or change your secret authentication token, click **Generate User Token**.
+
+
