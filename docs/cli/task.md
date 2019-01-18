@@ -7,8 +7,23 @@ nav_order: 62
 
 # Beaker task
 
-Blueprints are Beaker's unit of executable code. A blueprint combines a Docker image with metadata,
-such as its author and description, and an optional richer narrative in markdown. Please refer to
-[the wordcount example](https://beaker-pub.allenai.org/bp/bp_qbjvcda1sed7) for an overview.
+```
+usage: beaker task [<flags>] <command> [<args> ...]
 
-Like datasets, blueprints are immutable. The following example shows how to create and use blueprints.
+Manage tasks
+
+Flags:
+  -h, --help     Show context-sensitive help (also try --help-long and
+                 --help-man).
+  -v, --version  Show application version.
+      --debug    Print verbose stack traces on error.
+      --addr="https://beaker-pub.allenai.org"  
+                 Address of the Beaker service.
+
+Subcommands:
+  inspect <id>...
+    Display detailed information about one or more tasks
+
+  cancel <id>...
+    Stop one or more running tasks
+```
