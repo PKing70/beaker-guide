@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Blueprints
-parent: How To Use Beaker
 nav_exclude: true
 ---
 
