@@ -13,7 +13,7 @@ Here is an overview of the Beaker documentation:
 
 | Start | Learn | Use | Look Up   | Resources |
 | ----- | ----- | --- | --------- | --------- |
-| Install |  Blueprints | How To    | FAQ | Licenses    | 
+| [Install](/docs/install.md) |  Blueprints | How To    | FAQ | Licenses    | 
 | Configure Docker |  Datasets | Examples    | UI Reference | Terms of Use    | 
 | Your First Experiment |  Experiments |    |  Commands |     | 
 
