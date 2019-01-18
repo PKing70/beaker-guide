@@ -7,8 +7,35 @@ nav_order: 58
 
 # Beaker group
 
-Blueprints are Beaker's unit of executable code. A blueprint combines a Docker image with metadata,
-such as its author and description, and an optional richer narrative in markdown. Please refer to
-[the wordcount example](https://beaker-pub.allenai.org/bp/bp_qbjvcda1sed7) for an overview.
+```
+usage: beaker group [<flags>] <command> [<args> ...]
 
-Like datasets, blueprints are immutable. The following example shows how to create and use blueprints.
+Manage groups
+
+Flags:
+  -h, --help     Show context-sensitive help (also try --help-long and
+                 --help-man).
+  -v, --version  Show application version.
+      --debug    Print verbose stack traces on error.
+      --addr="https://beaker-pub.allenai.org"  
+                 Address of the Beaker service.
+
+Subcommands:
+  add [<flags>] <group> <experiment>...
+    Add experiments to an existing group
+
+  create --name=NAME [<flags>] [<experiment>...]
+    Create a new experiment group
+
+  delete [<flags>] <group>
+    Delete an experiment group
+
+  inspect [<flags>] <group>...
+    Display detailed information about one or more groups
+
+  remove [<flags>] <group> <experiment>...
+    Remove experiments from an existing group
+
+  rename [<flags>] <group> <new-name>
+    Rename an group
+```
