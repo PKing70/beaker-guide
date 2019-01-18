@@ -2,7 +2,7 @@
 layout: default
 title: Groups
 parent: How To Use Beaker
-nav_exclude: true
+nav_exclude: true 
 ---
 
 # Groups
