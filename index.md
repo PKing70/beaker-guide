@@ -4,7 +4,7 @@ title: Beaker Documentation
 nav_order: 1
 ---
 
-# Users Guide
+# User Guide
 
 [Beaker](https://beaker-pub.allenai.org) is a collaborative platform for
 rapid, reproducible research.
