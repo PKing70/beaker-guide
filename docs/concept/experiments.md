@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Experiments
-parent: How To Use Beaker
+parent: Concepts
 nav_order: 22
 ---
 
