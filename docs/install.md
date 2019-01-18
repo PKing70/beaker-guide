@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Installing
+title: Install
 nav_order: 10
 ---
 
-# Installing
+# Install and configure
+
+## Install
 
 There are a few different ways to install Beaker:
 
@@ -29,7 +31,40 @@ There are a few different ways to install Beaker:
     ```bash
     go get -u github.com/allenai/beaker/...
     ```
+## Configure
 
+To set up Beaker:
+
+1. Run `beaker configure`.
+2. When prompted for the Beaker address, enter https://beaker-pub.allenai.org
+3. When prompted for the user token, enter your token (available from your **user settings** at the Beaker site.
+
+For example:
+
+```
+% beaker configure⏎
+Beaker Configuration
+
+Press enter to keep the current value of any setting.
+Results will be saved to /Users/username/.beaker
+
+Beaker address [localhost:9027]: https://beaker-pub.allenai.org⏎
+User token []: <your token>⏎
+```
+
+## Test
+Run `beaker configure test` to check that your configuration is correct.
+
+For example:
+
+```
+% beaker configure test⏎
+Beaker Configuration Test
+
+Authenticating with user token: <your token>
+
+Authenticated as user: "<your username>" (<your id>)
+```
 
 
 
