@@ -6,22 +6,49 @@ nav_order: 10
 
 # Installing
 
-System requirements/prereqs
+There are a few different ways to install Beaker:
 
-Install Beaker on Linux
+- Download a
+[release](https://github.com/allenai/beaker/releases) and extract it to your path:
 
-* Environment commands/CLI
+    ```bash
+    tar -xvzf beaker_*.tar.gz -C /usr/local/bin
+    ```
 
-Install Beaker on Mac
+- Apple macOS users can install Beaker through [Homebrew](https://brew.sh/) with a custom tap:
 
-* Using Brew
+    ```bash
+    brew tap allenai/homebrew-beaker https://github.com/allenai/homebrew-beaker.git
+    brew install beaker
+    ```
 
-Configure Beaker (get token, plug it in)
+- Google [Go](https://golang.org/) developers can install Beaker from source using standard tools:
 
-Docker Images 
+    ```bash
+    go get -u github.com/allenai/beaker/...
+    ```
 
-* How to mount data into docker
+## Getting Started
 
-* Instances, CPUs, data limits, HD size
+1. Create an account at [beaker-pub.allenai.org](https://beaker-pub.allenai.org)
+   and follow the instructions in your [account settings](https://beaker-pub.allenai.org/user).
 
-* YAML fields/spec
+   These instructions will guide you through installing and configuring the
+   Beaker CLI. See [below](#install-beaker-cli) for more options.
+   
+   Request "Scientist" or higher credentials from a Beaker admin to get authorization
+   to create experiments.
+
+2. Run your first experiment. The following example
+   [counts words](https://beaker-pub.allenai.org/bp/bp_qbjvcda1sed7) in the text
+   of [Moby Dick](https://beaker-pub.allenai.org/ds/ds_1hz9k6sgxi0a).
+
+    ```bash
+    beaker experiment run \
+      --name wordcount-moby \
+      --blueprint examples/wordcount \
+      --source examples/moby:/input \
+      --result-path /output
+    ```
+
+
