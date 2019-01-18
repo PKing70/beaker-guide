@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Command Line Interface
-nav_order: 40
+nav_order: 60
 has_children: true
 permalink: /docs/cli
 ---
