@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blueprints
-parent: User's Guide
+parent: How To Use Beaker
 nav_order: 24
 ---
 
