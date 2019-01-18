@@ -2,7 +2,7 @@
 layout: default
 title: Blueprints
 parent: How To Use Beaker
-nav_order: 24
+nav_exclude: true
 ---
 
 # Blueprints
