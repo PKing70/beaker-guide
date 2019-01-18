@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Count words in parallel
+title: Your First Experiment
 parent: Examples
 nav_order: 40
 ---
