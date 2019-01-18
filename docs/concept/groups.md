@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Groups
-parent: How To Use Beaker
+parent: Concepts
 nav_exclude: true
 ---
 
