@@ -1,10 +1,8 @@
-{% comment %}
----
-layout: default
-title: API
-nav_order: 80
----
-{% endcomment %}
+[//]: # (---)
+[//]: # (layout: default)
+[//]: # (title: API)
+[//]: # (nav_order: 80)
+[//]: # (---)
 
 # API
 
