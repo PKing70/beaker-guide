@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Beaker Documentation
+title: User Guide
 nav_order: 1
 ---
 
