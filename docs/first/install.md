@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Install
+parent: Get Started
 nav_order: 10
 ---
 
