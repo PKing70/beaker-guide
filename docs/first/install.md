@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install
+title: Install Beaker
 parent: Get Started
 nav_order: 10
 ---
