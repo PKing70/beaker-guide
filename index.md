@@ -13,7 +13,7 @@ Here is an overview of the Beaker documentation:
 
 | Start | Learn | Use | Look Up   | Resources |
 | ----- | ----- | --- | --------- | --------- |
-| [Install](/docs/getstarted/install.md) |  [Blueprints](/concepts/blueprints.md) | Settings    | FAQ | [Licenses](/docs/beaker.html)    | 
+| [Install](/docs/getstarted/install.md) |  [Blueprints](/concepts/blueprints.md) | [Settings](/docs/howto/setting.md)    | FAQ | [Licenses](/docs/beaker.html)    | 
 | [Configure Docker](/docs/getstarted/install.md) |  [Datasets](/concepts/datasets.md) | Examples    | Beaker Site | [Terms of Use](https://beaker-pub.allenai.org/tos)    | 
-| [Your First Experiment](/docs/getstarted/first.md) |  [Experiments](/concepts/experiments.md) | CLI   |  Commands | [Releases](https://github.com/allenai/beaker/releases)    | 
+| [Your First Experiment](/docs/getstarted/first.md) |  [Experiments](/concepts/experiments.md) | [CLI](/docs/cli.md)   |  Commands | [Releases](https://github.com/allenai/beaker/releases)    | 
 
