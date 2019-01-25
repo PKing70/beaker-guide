@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Docker
+title: Configure Docker
 parent: Get Started
 nav_order: 11
 ---
