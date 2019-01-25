@@ -4,7 +4,7 @@ title: Install
 nav_order: 10
 ---
 
-# Install and configure
+# Install and configure Beaker
 
 ## Install
 
