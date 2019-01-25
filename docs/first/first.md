@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Install
-nav_order: 10
+title: Hello Beaker
+parent: Get Started
+nav_order: 12
 ---
 
 # Hello Beaker
