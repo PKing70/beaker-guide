@@ -5,66 +5,36 @@ parent: Get Started
 nav_order: 12
 ---
 
-# Hello Beaker
+# Your First Beaker Experiment 
 
-## Your First Beaker Experiment
+Beaker manages experiments as Docker containers combined with additional metadata to make your code and data easy to share and replicate. To show you how to do this with "real" code and data, this tutorial will show you how to train a Python Pytorch model using LeCun's MNIST dataset of images of handwritten digits.
 
-There are a few different ways to install Beaker:
+Don't worry if you don't know about Python, Pytorch, or MNIST data; you won't need to here. This exercise simply shows you how to run a full experiment with Beaker in a way that should be easy to understand. You should be able to apply these steps and concepts to your own code, data, and experiments.
 
-- Download a
-[release](https://github.com/allenai/beaker/releases) and extract it:
+## Set Up Python and Pytorch
+
+If not yet done, install [Python](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
+
+After installing, you can verify your configuration by enting `python` from your Terminal shell:
 
     ```bash
-    tar -xvzf beaker_*.tar.gz -C /usr/local/bin
+    $ python
+    Python 3.7.2 (default, Dec 29 2018, 00:00:04) 
+    [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> 
+    ```
+Which shows your Python version, date, and so on, if successfully configured.
+
+From the Python prompt (`>>>`, above) you can verify your Pytorch installation too:
+
+    ```bash
+    >>> import torch; print(torch.__version__)
+    1.0.0
     ```
     
-    Place the binary executable in your PATH (e.g., /usr/local/bin/ or ~/bin).
+Which shows your Pytorch/Torchvision version, if successfully configured.
 
-- macOS users can install Beaker through [Homebrew](https://brew.sh/) with a custom tap:
-
-    ```bash
-    brew tap allenai/homebrew-beaker https://github.com/allenai/homebrew-beaker.git
-    brew install beaker
-    ```
-
-- [GoLang](https://golang.org/) developers can install Beaker from source using standard tools:
-
-    ```bash
-    go get -u github.com/allenai/beaker/...
-    ```
-## Configure and Test
-
-To set up Beaker:
-
-1. Run `beaker configure`.
-2. When prompted for the Beaker address, enter https://beaker-pub.allenai.org
-3. When prompted for the user token, enter your token (available from your **user settings** at the Beaker site.
-
-For example:
-
-```
-% beaker configure⏎
-Beaker Configuration
-
-Press enter to keep the current value of any setting.
-Results will be saved to /Users/username/.beaker
-
-Beaker address [localhost:9027]: https://beaker-pub.allenai.org⏎
-User token []: <your token>⏎
-```
-
-Run `beaker configure test` to check that your configuration is correct.
-
-For example:
-
-```
-% beaker configure test⏎
-Beaker Configuration Test
-
-Authenticating with user token: <your token>
-
-Authenticated as user: "<your username>" (<your id>)
-```
-
+Finally, if you are new to Python for this tutorial, know you quit the Python shell (`>>>`) and return to your Terminal shell by pressing `control+d`.
 
 
