@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hello Beaker
+title: Your First Beaker Experiment
 parent: Get Started
 nav_order: 12
 ---
@@ -14,6 +14,10 @@ Don't worry if you don't know about Python, Pytorch, or MNIST data; you won't ne
 ## Set Up Python and Pytorch
 
 If not yet done, install [Python](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
+
+```bash
+docker build -t wordcount <path/to/wordcount/directory>
+```
 
 After installing, you can verify your configuration by enting `python` from your Terminal shell:
 
