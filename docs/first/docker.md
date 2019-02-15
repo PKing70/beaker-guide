@@ -2,7 +2,7 @@
 layout: default
 title: Configure Docker
 parent: Get Started
-nav_order: 11
+nav_exclude: true
 ---
 
 # Install and configure Docker
