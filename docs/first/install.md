@@ -5,7 +5,23 @@ parent: Get Started
 nav_order: 10
 ---
 
-# Install and configure Beaker
+# Set up Beaker
+
+## Join
+
+First, sign up for your [Beaker](https://beaker.org) account.
+
+1. From Beaker.org, click **Log In**.
+2. From Beaker Public, click **Sign Up**.
+3. Choose **SIGN UP WITH GOOGLE** and proceed to create and confirm your Beaker account.
+
+If you already have an account, make sure to sign in before using Beaker.
+
+1. From Beaker.org, click **Log In**.
+2. From Beaker Public, click **LOG IN WITH GOOGLE**.
+3. Choose the Google account with which you signed up for Beaker.
+
+When signed in, you'll see your user name in the top-right corner of [Beaker.org](https://beaker.org) and have access to your **Experiments**, **Datasets** and **Groups** pages.
 
 ## Install
 
@@ -32,13 +48,15 @@ There are a few different ways to install Beaker:
     ```bash
     go get -u github.com/allenai/beaker/...
     ```
+  
+
 ## Configure and Test
 
 To set up Beaker:
 
 1. Run `beaker configure`.
-2. When prompted for the Beaker address, enter https://beaker-pub.allenai.org
-3. When prompted for the user token, enter your token (available from your **user settings** at the Beaker site.
+2. When prompted for the Beaker address, enter https://beaker.org
+3. When prompted for the user token, enter your token. Your token is available from your **Settings** at [Beaker.org](https://beaker.org). To find it, when signed in to Beaker, from the top-right corner click your **user name**, **Settings**.
 
 For example:
 
@@ -65,5 +83,3 @@ Authenticating with user token: <your token>
 
 Authenticated as user: "<your username>" (<your id>)
 ```
-
-
