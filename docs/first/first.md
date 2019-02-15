@@ -15,27 +15,23 @@ Don't worry if you don't know about Python, Pytorch, or MNIST data; you won't ne
 
 If not yet done, install [Python](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
 
-```bash
-docker build -t wordcount <path/to/wordcount/directory>
-```
-
 After installing, you can verify your configuration by enting `python` from your Terminal shell:
 
-    ```bash
-    $ python
-    Python 3.7.2 (default, Dec 29 2018, 00:00:04) 
-    [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> 
-    ```
+```bash
+$ python
+Python 3.7.2 (default, Dec 29 2018, 00:00:04) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
 Which shows your Python version, date, and so on, if successfully configured.
 
 From the Python prompt (`>>>`, above) you can verify your Pytorch installation too:
 
-    ```bash
-    >>> import torch; print(torch.__version__)
-    1.0.0
-    ```
+```python
+>>> import torch; print(torch.__version__)
+1.0.0
+```
     
 Which shows your Pytorch/Torchvision version, if successfully configured.
 
