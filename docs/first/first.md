@@ -41,44 +41,67 @@ Finally, if you are new to Python for this tutorial, know you quit the Python sh
 
 For this tutorial, you should use the code from https://github.com/beaker/mnist-example. 
 
-1. Clone https://github.com/beaker/mnist-example
-2. Download your dataset from from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to /data directory. The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. For this experiment, download the four MNIST source files (`/t10k-images-idx3-ubyte`...).
+1. Clone https://github.com/beaker/mnist-example. An easy way to do this is to click **Clone or download** from the GitHub page and download the ZIP to `/Downloads`, so that you have the files in `/Downloads/mnist-example-master`.
+
+2. Download your dataset from from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to a /data subdirectory of the location which you cloned `mnist-example` (for example, `/Downloads/mnist-example-master/data`. The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. For this experiment, download the four MNIST source files (`/t10k-images-idx3-ubyte`...).
 
 ## Run the experiment
 
-1. Set the python path:
+1. Export the python path:
 ```bash
 export PYTHONPATH=.
 ```
-2. Set the EPOCH environment variable, required by this experiment:
+
+2. Set and exportthe EPOCH environment variable, required by this experiment:
 ```bash
 EPOCH=10
+export EPOCH
 ```
-3. From your local mnist-example directory, run the main program in Python, using the path to the data director to which you downloaded the dataset above:
+
+3. From your local `mnist-example-master` directory, run the main program in Python:
 ```bash
-python beaker_pytorch/main.py \
-    --data-dir /path/to/data \
-    --output-dir /tmp/output \
+python beaker_pytorch/main.py
 ```
+You should see the experiment run, then conclude with a message such as:
+```bash
+Test set: Average loss: 0.2057, Accuracy: 9405/10000 (94%)
+$
+```
+By default, this experiment puts its results in an `/output` folder, in `metrics.json`.
+
+All of this code simple represents an actual running experiment codebase and dataset, as you might have without Beaker. The next step is to put this experiment into a Docker image. 
 
 ## Build the Docker image 
 
-1. Build the docker image:
+To build the docker image, from the command line run:
 ```bash
 docker build -t mnist .
 ```
+You should see the Docker steps complete, and conclude successfully with a message such as:
+```
+Successfully tagged mnist:latest
+$ 
+```
+
 ## Create the Beaker blueprint
 
-All of the above steps represent the creation and running of an experiment without Beaker. Next, you will use Beaker to create a blueprint that represents this experiment, and pushes it to Beaker.org for management and reuse.
+Now you have a Docker image of a complete experiment codebase and dataset. Next, create a Beaker blueprint to represent this experiment and push it to Beaker.org for management and reuse.
 
 ```bash
-beaker blueprint create -n mnist mnist
+beaker blueprint create -n <mnist> mnist
 ```
-You can have only one Beaker blueprint called mnist. If necessary, change this name to something unique such as mnist2.
+Note can have only one Beaker blueprint called mnist. So if you must because you've created an mnist blueprint previously, change <mnist> to something unique such as mnist2.
 
-Now, run the experiment using Beaker:
+If you successfully create the blueprint, you should see a message such as:
+```
+latest: digest: sha256:569de2a77ba779dbfddf6cc897f7abb17ef674239021b5f05e63e596aa7db5c3 size: 3058
+Done.
+$
+```
+
+Now, you can run the experiment using Beaker:
 ```bash
-beaker experiment run -f spec.yml
+beaker experiment create -f spec.yml
 ```
 ## What happened?
 
@@ -87,19 +110,3 @@ Check out your experiment at the URL provided from the command line.
 You should see A B C.
 
 You can now rerun this experiment easily, by ...
-
-The experiment that was already defined for you on Beaker.org was just run again, by your command. You can see its latest status at
-
-This demonstrates how Beaker facilitates experiment replication.
-
-Next, Your dataset
-
-The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. For this experiment, download the four MNIST files (`/t10k-images-idx3-ubyte` and so on) from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to a local directory.
-
-## Your blueprint
-
-The specification that defines your Beaker experiment is your *blueprint*. For this experiment, download the MNIST blueprint  in YAML format from ... at Beaker.
-
-
-
-
