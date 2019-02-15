@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Configure Docker
-parent: Get Started
 nav_exclude: true
 ---
 
