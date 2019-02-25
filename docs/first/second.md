@@ -107,16 +107,61 @@ Done.
 $
 ```
 
-Notice that each blueprint is assigned a unique ID in addition to the name we chose. Any object,
+Notice that each blueprint is assigned a unique ID, in addition to the name we chose. Any object,
 including blueprints, can be referred to by its name or ID. Like any object, a blueprint can be
 renamed, but its ID is guaranteed to remain stable. The following two commands are equivalent:
 
 ```bash
-beaker blueprint inspect examples/mymnist
+beaker blueprint inspect mymnist
 beaker blueprint inspect bp_8ugouwgec4gn
 ```
 
-Also note that the output shows you the identity of the Google cloud repo for your image (gcr.io/ai2-beaker-core/public/bhq49ga41h4qcklhc79g).
+Either should produce CLI output such as:
 
-Now, if you were to use the existing experiment spec that you cloned from Github (spec.yml) you could run this already-defined experiment using Beaker with `beaker experiment create -f spec.yml` as we did in the prior example. However, this wouldn't use all the local code and data you've set up. Instead, we will create a new experiment spec to use our local code and data.
+```bash
+[
+    {
+        "id": "bp_8ugouwgec4gn",
+        "user": {
+            "id": "<your_user_id>",
+            "name": "<your_user_name>",
+            "display_name": ""
+        },
+        "name": "mymnist",
+        "created": "2019-02-25T19:51:00.116911Z",
+        "committed": "2019-02-25T19:51:05.103003Z",
+        "original_tag": "mnist"
+    }
+]
+```
+
+## Pulling a Blueprint
+
+You can pull a blueprint to your local machine at any time with `beaker blueprint pull`.
+
+```
+▶ beaker blueprint pull mymnist
+Pulling gcr.io/ai2-beaker-core/public/bduufrl06q5ner2l0440 ...
+latest: Pulling from ai2-beaker-core/public/bduufrl06q5ner2l0440
+Digest: sha256:4c70545c15cca8d30b3adfd004a708fcdec910f162fa825861fe138200f80e19
+Status: Downloaded newer image for gcr.io/ai2-beaker-core/public/bduufrl06q5ner2l0440:latest
+Done.
+```
+
+In order to avoid accidentally overwriting your local images, this command assigns Beaker's random
+internally assigned tag  `gcr.io/ai2-beaker-core/public/bduufrl06q5ner2l0440` by default. To assign
+a more human-friendly tag, set it with an additional argument:
+
+```
+▶ beaker blueprint pull mymnist friendly-name
+```
+
+## Cleanup
+
+To clean up, simply `docker image rm` any images created above.
+
+Because blueprints are immutable, they can't be deleted. It will be possible to archive them in the
+near future.
+
+Next, we'll go through creating your own experiment spec.
 
