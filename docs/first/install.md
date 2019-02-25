@@ -90,4 +90,4 @@ Install the appropriate Docker Desktop version from the [Docker site](https://ww
 
 ## Next step
 
-When you have your Beaker.org account, Beaker, and Docker each installed and configured, proceed to your first experiment to learn the fundamentals of experiments with Beaker. 
+When you have your Beaker.org account, Beaker, and Docker each installed and configured, proceed to [your first experiment](first.md) to learn the fundamentals of experiments with Beaker. 
