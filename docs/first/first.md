@@ -9,104 +9,53 @@ nav_order: 12
 
 Beaker manages experiments as Docker containers combined with additional metadata to make your code and data easy to share and replicate. To show you how to do this with "real" code and data, this tutorial will show you how to train a Python Pytorch model using LeCun's MNIST dataset of images of handwritten digits.
 
-Don't worry if you don't know about Python, Pytorch, or MNIST data; you won't need to here. This exercise simply shows you how to run a full experiment with Beaker in a way that should be easy to understand. You should be able to apply these steps and concepts to your own code, data, and experiments.
+Don't worry if you don't know about Python, Pytorch, or MNIST data; you won't need to here. This exercise simply shows you how to run a full experiment with Beaker in a way that should be easy to understand. 
 
-## Set Up Python and Pytorch
+## Experiments on Beaker.org
 
-If not yet done, install [Python](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
+First, go to the [MNIST example](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe) page on Beaker.org.
 
-After installing, you can verify your configuration by enting `python` from your Terminal shell:
+![Beaker page for MNIST example](../images/beaker_ex.png)
 
-```bash
-$ python
-Python 3.7.2 (default, Dec 29 2018, 00:00:04) 
-[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> 
-```
-Which shows your Python version, date, and so on, if successfully configured.
+You can see an existing experiment, already provided by Beaker. You can click around, to see Beaker features such as its **Experiment Graph** and **Spec**. 
 
-From the Python prompt (`>>>`, above) you can verify your Pytorch installation too:
+Re-run this experiment in the Beaker clould by simply clicking **Re-run** in the top-right corner of the experiment page. If you do so, don't modify the experiment spec; just confirm by clicking **Re-run** from **Re-run Experiment**.
 
-```python
->>> import torch; print(torch.__version__)
-1.0.0
-```
-    
-Which shows your Pytorch/Torchvision version, if successfully configured.
+<img src="../images/re_run.png" width="400">
 
-Finally, if you are new to Python for this tutorial, know you quit the Python shell (`>>>`) and return to your Terminal shell by pressing `control+d`.
+You should see a new experiment page with a unique experiment ID, and watch its task progress through provisioning to completion. When complete you can now see this re-run experiment's information on Beaker.org.
 
-## Get an existing experiment
+That's how Beaker makes experiments simple to share with others, and keeps track of different runs of a base experiment.
 
-For this tutorial, you should use the code from https://github.com/beaker/mnist-example. 
+Next, you should use the Beaker CLI to run the same experiment from your local machine.
 
-1. Clone https://github.com/beaker/mnist-example. An easy way to do this is to click **Clone or download** from the GitHub page and download the ZIP to `/Downloads`, so that you have the files in `/Downloads/mnist-example-master`.
+## Local experiments
 
-2. Download your dataset from from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to a /data subdirectory of the location which you cloned `mnist-example` (for example, `/Downloads/mnist-example-master/data`. The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. For this experiment, download the four MNIST source files (`/t10k-images-idx3-ubyte`...).
+For these steps to work, you must have completed [installing Beaker](install.md). When installed:
 
-## Run the experiment
+1. From the existing [MNIST example](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe) experiment page on Beaker.org, click the Spec tab.
 
-1. Export the python path:
-```bash
-export PYTHONPATH=.
-```
+![Spec for MNIST example](../images/ex_spec.png)
 
-2. Set and exportthe EPOCH environment variable, required by this experiment:
-```bash
-EPOCH=10
-export EPOCH
-```
+2. Click Download to save the experiment's YAML spec file to a location on your local hard drive.
 
-3. From your local `mnist-example-master` directory, run the main program in Python:
-```bash
-python beaker_pytorch/main.py
-```
-You should see the experiment run, then conclude with a message such as:
-```bash
-Test set: Average loss: 0.2057, Accuracy: 9405/10000 (94%)
-$
-```
-By default, this experiment puts its results in an `/output` folder, in `metrics.json`.
-
-All of this code simple represents an actual running experiment codebase and dataset, as you might have without Beaker. The next step is to put this experiment into a Docker image. 
-
-## Build the Docker image 
-
-To build the docker image, from the command line run:
-```bash
-docker build -t mnist .
-```
-You should see the Docker steps complete, and conclude successfully with a message such as:
-```
-Successfully tagged mnist:latest
-$ 
-```
-
-## Create the Beaker blueprint
-
-Now you have a Docker image of a complete experiment codebase and dataset. Next, create a Beaker blueprint to represent this experiment and push it to Beaker.org for management and reuse.
+3. From the command line at this directory, enter:
 
 ```bash
-beaker blueprint create -n <mnist> mnist
-```
-Note can have only one Beaker blueprint called mnist. So if you must because you've created an mnist blueprint previously, change <mnist> to something unique such as mnist2.
-
-If you successfully create the blueprint, you should see a message such as:
-```
-latest: digest: sha256:569de2a77ba779dbfddf6cc897f7abb17ef674239021b5f05e63e596aa7db5c3 size: 3058
-Done.
-$
+beaker experiment create -f ex_zvtqxr5dlpqe.yaml
 ```
 
-Now, you can run the experiment using Beaker:
+Make sure the experiment ID matches the specific experiment you want to re-run, exactly. This ID is unique to every experiment run.
+
+You should see the following output:
+
 ```bash
-beaker experiment create -f spec.yml
+Experiment ex_zvtqxr5dlpqe submitted. See progress at https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe
 ```
-## What happened?
 
-Check out your experiment at the URL provided from the command line. 
+You can see your experiments tasks progress to completion at the URL provided by this output (for example, [https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe)).
 
-You should see A B C.
+That's how an experiment is defined and shared by its spec, the YAML file containing the necessary metadata with which you can manage an experiment.
 
-You can now rerun this experiment easily, by ...
+If both of the above steps are working for you, you are ready to proceed to creating your own experiment and spec, which is the next example. 
+
