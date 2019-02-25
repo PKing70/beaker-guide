@@ -1,19 +1,21 @@
 ---
 layout: default
-title: Your First Beaker Experiment
+title: Create Your Blueprint
 parent: Get Started
-nav_order: 12
+nav_order: 14  
 ---
 
-# Your First Beaker Experiment 
+# Create Your Own Blueprint 
 
-Beaker manages experiments as Docker containers combined with additional metadata to make your code and data easy to share and replicate. To show you how to do this with "real" code and data, this tutorial will show you how to train a Python Pytorch model using LeCun's MNIST dataset of images of handwritten digits.
+In this step, you'll use existing experiment code, data, and a Docker file. To this, you'll define your own Beaker blueprint, to define and manage the experiment you will run. This example continues with the MNIST dataset of the prior example. 
 
-Don't worry if you don't know about Python, Pytorch, or MNIST data; you won't need to here. This exercise simply shows you how to run a full experiment with Beaker in a way that should be easy to understand. You should be able to apply these steps and concepts to your own code, data, and experiments.
+Don't worry if you don't know much about Python, Pytorch, or MNIST data; you won't need to here. This exercise simply shows you how to run a full experiment with Beaker in a way that should be easy to understand. You should be able to apply these steps and concepts to your own code, data, and experiments.
+
+This example assumes you've successfully completed [Beaker and Docker installation](install.md), and you've set up your [Beaker.org](https://www.beaker.org) account and can run experiments as shown in [Your First Experiment](first.md).
 
 ## Set Up Python and Pytorch
 
-If not yet done, install [Python](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
+If you don't already have them set up, install [Python](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
 
 After installing, you can verify your configuration by enting `python` from your Terminal shell:
 
@@ -69,44 +71,52 @@ $
 ```
 By default, this experiment puts its results in an `/output` folder, in `metrics.json`.
 
-All of this code simple represents an actual running experiment codebase and dataset, as you might have without Beaker. The next step is to put this experiment into a Docker image. 
+All of this code simple represents the actual experiment codebase and dataset running locally, as you might do without Beaker. You are simply producing locally what the prior experiment did for you within the Beaker cloud.
+
+The next step is to put this experiment into a Docker image. 
 
 ## Build the Docker image 
 
-To build the docker image, from the command line run:
+To build the docker image from the existing Dockerfile (which you cloned from Github), from the command line run:
 ```bash
-docker build -t mnist .
+docker build -t mymnist .
 ```
 You should see the Docker steps complete, and conclude successfully with a message such as:
 ```
-Successfully tagged mnist:latest
+Successfully tagged mymnist:latest
 $ 
 ```
+In later examples, we'll show you how to set up your own Dockerfile but for this step, just use the provided Dockerfile that you cloned from Github.
 
 ## Create the Beaker blueprint
 
 Now you have a Docker image of a complete experiment codebase and dataset. Next, create a Beaker blueprint to represent this experiment and push it to Beaker.org for management and reuse.
 
 ```bash
-beaker blueprint create -n <mnist> mnist
+beaker blueprint create -n <mymnist> mnist
 ```
 Note can have only one Beaker blueprint called mnist. So if you must because you've created an mnist blueprint previously, change <mnist> to something unique such as mnist2.
 
-If you successfully create the blueprint, you should see a message such as:
+If you successfully create the blueprint, you should see output such as:
 ```
+Pushing mymnist as mnist (bp_8ugouwgec4gn)...
+<...preparing, waiting, etc...>
+The push refers to repository [gcr.io/ai2-beaker-core/public/bhq49ga41h4qcklhc79g]
 latest: digest: sha256:569de2a77ba779dbfddf6cc897f7abb17ef674239021b5f05e63e596aa7db5c3 size: 3058
 Done.
 $
 ```
 
-Now, you can run the experiment using Beaker:
+Notice that each blueprint is assigned a unique ID in addition to the name we chose. Any object,
+including blueprints, can be referred to by its name or ID. Like any object, a blueprint can be
+renamed, but its ID is guaranteed to remain stable. The following two commands are equivalent:
+
 ```bash
-beaker experiment create -f spec.yml
+beaker blueprint inspect examples/mymnist
+beaker blueprint inspect bp_8ugouwgec4gn
 ```
-## What happened?
 
-Check out your experiment at the URL provided from the command line. 
+Also note that the output shows you the identity of the Google cloud repo for your image (gcr.io/ai2-beaker-core/public/bhq49ga41h4qcklhc79g).
 
-You should see A B C.
+Now, if you were to use the existing experiment spec that you cloned from Github (spec.yml) you could run this already-defined experiment using Beaker with `beaker experiment create -f spec.yml` as we did in the prior example. However, this wouldn't use all the local code and data you've set up. Instead, we will create a new experiment spec to use our local code and data.
 
-You can now rerun this experiment easily, by ...
