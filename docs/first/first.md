@@ -33,11 +33,11 @@ Next, you should use the Beaker CLI to run the same experiment from your local m
 
 For these steps to work, you must have completed [installing Beaker](install.md). When installed:
 
-1. From the existing [MNIST example](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe) experiment page on Beaker.org, click the Spec tab.
+1. From the existing [MNIST example](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe) experiment page on Beaker.org, click the **Spec** tab.
 
 ![Spec for MNIST example](../images/ex_spec.png)
 
-2. Click Download to save the experiment's YAML spec file to a location on your local hard drive.
+2. Click **Download** to save the experiment's YAML spec file to a location on your local hard drive.
 
 3. From the command line at this directory, enter:
 
