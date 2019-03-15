@@ -89,7 +89,7 @@ Test set: Average loss: 0.2057, Accuracy: 9405/10000 (94%)
 ```
 By default, this code puts results in an `/output` subdirectory, in `metrics.json`.
 
-If this doesn't run for you, double-check your Python (or perhaps Beaker) configurations; note that Python 3.7 is required by this particular code.
+If this doesn't run for you, double-check your Python (or perhaps Beaker) configurations; note that Python 3.6.5 or later is required by this experiment.
 
 All of the above simply represents an experiment's code and dataset running locally, as you would do without using Beaker. This code produces locally what the [prior example](first.md) produced using the Beaker cloud. (This is likely backwards from how you would first create a local experiment, to then add it to Beaker not the other way around...but for tutorial purposes, you can pretend that the mnist code and data is only local, so you can now learn how to *Beakerize* it.)
 
@@ -109,7 +109,7 @@ Successfully tagged mymnist:latest
 ```
 This Docker CLI command instructed Docker to build an image based on the files at the current directory, using the Dockerfile that you cloned to this location, and you tagged it `mynist`. 
 
-In later examples, we'll show you how to set up your own Dockerfile for building images. For now, simply use the provided Dockerfile that you cloned from Github. If you want, you can view the Dockerfile's txt contents to see its base image, ENV instructions, and so on. For now, however, don't make any changes.
+In later examples, we'll show you how to set up your own Dockerfile for building images. For now, simply use the provided Dockerfile that you downloaded from Github. If you want, you can view the Dockerfile's txt contents to see its base image, ENV instructions, and so on. For now, don't make any changes to it.
 
 ## Create a Beaker blueprint
 
@@ -118,7 +118,7 @@ Now you have a Docker image of a complete local experiment's codebase and datase
 ```bash
 $ beaker blueprint create -n <mymnist> mymnist
 ```
-Note can have only one Beaker blueprint called mynist. So if you must because you've created an mymnist blueprint previously, change <mymnist> to something unique such as mymnist2.
+Note can have only one Beaker blueprint called mynist. So, if you've created an mymnist blueprint previously, change <mymnist> to a unique name, such as mymnist2. 
 
 If you successfully create the blueprint, you should see output such as:
 ```
@@ -131,7 +131,7 @@ $
 ```
 
 Notice that each blueprint is assigned a unique ID, in addition to the name we chose. Any object,
-including blueprints, can be referred to by its name or ID. Like any object, a blueprint can be
+including blueprints, can be referred to by either its name or ID. Like any object, a blueprint can be
 renamed, but its ID is guaranteed to remain stable. The following two commands are equivalent:
 
 ### Inspect the blueprint
@@ -263,7 +263,7 @@ $ beaker dataset inspect --manifest mymnist-dataset
 
 ### Download
 
-You can download a dataset to your local drive at any time with `beaker dataset fetch`. Beaker's
+As you might recall from setting up this code and data earlier, you can download a dataset to your local drive at any time with `beaker dataset fetch`. Beaker's
 `fetch` command follows the same rules as the standard `cp` command. The following example downloads
 the mymnist-dataset dataset to an empty directory. Notice how the original filename is restored by default.
 
