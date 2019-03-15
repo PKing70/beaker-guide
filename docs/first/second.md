@@ -281,5 +281,5 @@ To clean up datasets, simply remove any unneeded dataset directories.
 
 Because blueprints and datasets are immutable, they can't be deleted from the Beaker cloud. It will be possible to archive datasets in the near future.
 
-Next, we'll go through creating your own experiment spec.
+If all of the above is working for you, it's time to create your own experiment spec, which is the [next example](third.md).
 
