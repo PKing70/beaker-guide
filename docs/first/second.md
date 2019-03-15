@@ -41,7 +41,7 @@ Finally, if you are new to Python for this tutorial, know you quit the Python sh
 
 ## Get the existing code and data
 
-For this tutorial, you should use the code from https://github.com/beaker/mnist-example. 
+For this tutorial, you should use the code from [https://github.com/beaker/mnist-example](https://github.com/beaker/mnist-example). 
 
 1. Clone https://github.com/beaker/mnist-example. An easy way to do this is to click **Clone or download** from the GitHub page and download the ZIP to `/Downloads`, so that you have the files in `/Downloads/mnist-example-master`.
 
