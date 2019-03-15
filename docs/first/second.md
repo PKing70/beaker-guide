@@ -43,12 +43,14 @@ Finally, if you are new to Python for this tutorial, know you quit the Python sh
 
 For this tutorial, you should use the code from [https://github.com/beaker/mnist-example](https://github.com/beaker/mnist-example). 
 
-1. Clone https://github.com/beaker/mnist-example. An easy way to do this is to click **Clone or download** from the GitHub page and download the ZIP to `/Downloads`, so that you have the files in `/Downloads/mnist-example-master`.
+1. Clone https://github.com/beaker/mnist-example. An easy way to do this is to click **Clone or download** from the GitHub page and download the ZIP. You'll want to run this example from a directory where you have write permission, so if needed, extract the ZIP to such a location (for example, to `~/Documents/mnist-example-master`). 
 
-2. Download the dataset from from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to a /data subdirectory of the location which you cloned `mnist-example` (for example, `/Downloads/mnist-example-master/data`. The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. For this experiment, download the four MNIST source files (`/t10k-images-idx3-ubyte`...).
-
-3. You should extract from the four `.gz` archives their contents, then remove the corresponding `.gz` archives, so that the `data` folder contains four extracted image collections:
-
+2. Download the dataset from from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to a /data subdirectory `mnist-example-master` (for example, `~/Documnets/mnist-example-master/data`. The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. A convenient way to download the four MNIST source files is from your `mnist-example-master` directory, run: 
+```bash
+$ export PYTHONPATH=.
+```
+$ beaker dataset fetch --output=./data ds_kf6v919aq7hk
+The result should be that your `mnist-example-master/data` subdirectory contains:
 ```
 train-images-idx3-ubyte
 t10k-images-idx3-ubyte		
@@ -65,13 +67,13 @@ Some environment variables must be exported for the Python code to run.
 $ export PYTHONPATH=.
 ```
 
-2. Set and exportthe EPOCH environment variable, required by this experiment:
+2. Set and export the EPOCH environment variable, required by this experiment:
 ```bash
 $ EPOCH=10
 $ export EPOCH
 ```
 
-3. From your local `mnist-example-master` directory, run the main program in Python:
+3. From your `mnist-example-master` directory, run the main program in Python:
 ```bash
 $ python beaker_pytorch/main.py
 ```
@@ -81,9 +83,11 @@ You should see the code run, then conclude with a message such as:
 Test set: Average loss: 0.2057, Accuracy: 9405/10000 (94%)
 $
 ```
-By default, this code puts its results in an `/output` folder, in `metrics.json`.
+By default, this code puts results in an `/output` subdirectory, in `metrics.json`.
 
-All of the above simply represents an actual experiment codebase and dataset running locally, as you would do without using Beaker. This code produces locally what the [prior example](first.md) did for you using the Beaker cloud.
+If this doesn't run for you, double-check your Python (or perhaps Beaker) configurations; note that Python 3.7 is required by this particular code.
+
+All of the above simply represents an experiment's code and dataset running locally, as you would do without using Beaker. This code produces locally what the [prior example](first.md) produced using the Beaker cloud. (This is likely backwards from how you would first create a local experiment, to then add it to Beaker not the other way around...but for tutorial purposes, you can pretend that the mnist code and data is only local, so you can now learn how to *Beakerize* it.)
 
 The next step towards making this code and data managed in Beaker is to build a corresponding a Docker image. 
 
