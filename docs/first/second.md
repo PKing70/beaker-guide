@@ -47,9 +47,10 @@ For this tutorial, you should use the code from [https://github.com/beaker/mnist
 
 2. Download the dataset from from [here](https://beaker.org/ds/ds_kf6v919aq7hk/details) to a /data subdirectory `mnist-example-master` (for example, `~/Documnets/mnist-example-master/data`. The *dataset* used with experiments are the files, or directories of files, referenced by the code of the experiment. A convenient way to download the four MNIST source files is from your `mnist-example-master` directory, run: 
 ```bash
-$ export PYTHONPATH=.
+$ $ beaker dataset fetch --output=./data ds_kf6v919aq7hk
 ```
-$ beaker dataset fetch --output=./data ds_kf6v919aq7hk
+You can get the dataset ID (ds_kf6v919aq7hk) from the dataset page on [Beaker.org](ds_kf6v919aq7hk).
+
 The result should be that your `mnist-example-master/data` subdirectory contains:
 ```
 train-images-idx3-ubyte
