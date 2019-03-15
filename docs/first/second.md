@@ -15,7 +15,7 @@ This example assumes you've successfully completed [Beaker and Docker installati
 
 ## Set Up Python and Pytorch
 
-If not already set up, install [Python 3.7](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
+If not already set up, install [Python 3](https://www.python.org/downloads/) and [Pytorch (and Torchvision)](https://pytorch.org/get-started/locally/).
 
 After installing, you can verify your configuration by entering `python` from your Terminal shell:
 
@@ -78,9 +78,9 @@ $ EPOCH=10
 $ export EPOCH
 ```
 
-3. From your `mnist-example-master` directory, run the main program in Python:
+3. From your `mnist-example-master` directory, run the main program with Python 3:
 ```bash
-$ python beaker_pytorch/main.py
+$ python3 beaker_pytorch/main.py
 ```
 You should see the code run, then conclude with a message such as:
 ```bash
