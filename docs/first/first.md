@@ -57,5 +57,5 @@ You can see your experiments tasks progress to completion at the URL provided by
 
 That's how an experiment is defined and shared by its spec, the YAML file containing the necessary metadata with which you can manage an experiment.
 
-If both of the above steps are working for you, you are ready to proceed to creating your own experiment and spec, which is the [next example](second.md). 
+If both of the above steps are working for you, you are ready to proceed to creating your own Beaker blueprint and dataset, which is the [next example](second.md). 
 
