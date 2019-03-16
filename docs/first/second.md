@@ -116,9 +116,9 @@ In later examples, we'll show you how to set up your own Dockerfile for building
 Now you have a Docker image of a complete local experiment's codebase and dataset. Next, create a Beaker *blueprint* to represent this experiment and push it to Beaker.org for management and reuse.
 
 ```bash
-$ beaker blueprint create -n <mymnist> mymnist
+$ beaker blueprint create -n <mymnist> mnist
 ```
-Note can have only one Beaker blueprint called mynist. So, if you've created an mymnist blueprint previously, change <mymnist> to a unique name, such as mymnist2. 
+Note can have only one Beaker blueprint called mymnist. So, if you've created a mymnist blueprint previously, change <mymnist> to a unique name, such as mymnist2. 
 
 If you successfully create the blueprint, you should see output such as:
 ```
@@ -160,7 +160,7 @@ Either should produce CLI output such as:
 ]
 ```
 
-### Pulling a Blueprint
+### Pull a blueprint
 
 You can pull your blueprint to your local machine at any time with `beaker blueprint pull`.
 
@@ -269,7 +269,7 @@ the mymnist-dataset dataset to an empty directory. Notice how the original filen
 
 ```
 $ mkdir fetched
-$ beaker dataset fetch -o fetched my-file-dataset
+$ beaker dataset fetch -o fetched mymnist-dataset
 Downloading dataset ds_q76gp0s33d01 to directory fetched/ ... done.
 ```
 
