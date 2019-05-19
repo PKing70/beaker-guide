@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Install
-nav_order: 10
+title: Configure Docker
+nav_exclude: true
 ---
 
-# Install and configure
+# Install and configure Docker
 
 ## Install
 
@@ -19,19 +19,19 @@ There are a few different ways to install Beaker:
     
     Place the binary executable in your PATH (e.g., /usr/local/bin/ or ~/bin).
 
-- Apple macOS users can install Beaker through [Homebrew](https://brew.sh/) with a custom tap:
+- macOS users can install Beaker through [Homebrew](https://brew.sh/) with a custom tap:
 
     ```bash
     brew tap allenai/homebrew-beaker https://github.com/allenai/homebrew-beaker.git
     brew install beaker
     ```
 
-- Google [Go](https://golang.org/) developers can install Beaker from source using standard tools:
+- [GoLang](https://golang.org/) developers can install Beaker from source using standard tools:
 
     ```bash
     go get -u github.com/allenai/beaker/...
     ```
-## Configure
+## Configure and Test
 
 To set up Beaker:
 
@@ -52,7 +52,6 @@ Beaker address [localhost:9027]: https://beaker-pub.allenai.org⏎
 User token []: <your token>⏎
 ```
 
-## Test
 Run `beaker configure test` to check that your configuration is correct.
 
 For example:
@@ -65,6 +64,5 @@ Authenticating with user token: <your token>
 
 Authenticated as user: "<your username>" (<your id>)
 ```
-
 
 

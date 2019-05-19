@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Blueprints
-nav_exclude: true
+parent: Concepts
+nav_order: 20
 ---
 
 # Blueprints

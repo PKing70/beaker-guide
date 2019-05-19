@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Experiments
-nav_exclude: true
+parent: Concepts
+nav_order: 22
 ---
 
 # Experiments

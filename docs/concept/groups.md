@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Groups
-nav_exclude: true 
+parent: Concepts
+nav_order: 28
 ---
 
 # Groups

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Datasets
-nav_exclude: true
+parent: Concepts
+nav_order: 24
 ---
 
 # Datasets

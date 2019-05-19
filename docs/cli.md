@@ -8,7 +8,7 @@ permalink: /docs/cli
 
 # CLI
 
-To list available commands, from the Terminal either run `docker` or `docker help`.
+To list available commands, from the Terminal either run `beaker` or `beaker help`.
 
 ```bash
 $ beaker
@@ -77,23 +77,4 @@ Subcommands:
   test
     Test the configuration
 ```
-
-## beaker (base command)
-
-## beaker commands
-
-| Command        | Description           |
-| ------------- |-------------| 
-| beaker blueprint      | this is it | 
-| beaker configure      | this is it      | 
-| beaker dataset | this is it      | 
-| beaker experiment | this is it      | 
-| beaker group | this is it      | 
-| beaker help | this is it      | 
-| beaker versions | this is it      | 
-| beaker task | this is it      | 
-
-
-
-
 
