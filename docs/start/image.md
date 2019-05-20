@@ -7,11 +7,11 @@ nav_order: 14
 
 # Create an Image and Dataset 
 
-In this step, you'll use existing experiment code, data, and a Docker file. You'll define your own Beaker *image*, to define and manage the experiment you will run, and a Beaker *dataset* to hold the source data. This example locally reproduces the existing MNIST experiment of the [prior example](first.md). 
+In this step, you'll use existing experiment code, data, and a Docker file. You'll define your own Beaker *image*, to define and manage the experiment you will run, and a Beaker *dataset* to hold the source data. This example locally reproduces the existing MNIST experiment of the [prior example](experiment.md). 
 
 Don't worry if you don't know much about Python, Pytorch, or MNIST data; you don't need to. Rather, this exercise simply shows you how to run a full experiment with Beaker. You should then be able to apply these concepts to your own code, data, and experiments, to manage them with Beaker.
 
-This example assumes you've successfully completed [Beaker and Docker installation](install.md), and you've set up your [Beaker.org](https://www.beaker.org) account so that you can run experiments as shown in [Your First Experiment](first.md).
+This example assumes you've successfully completed [Beaker and Docker installation](install.md), and you've set up your [Beaker.org](https://www.beaker.org) account so that you can run experiments as shown in [Your First Experiment](experiment.md).
 
 ## Set Up Python and Pytorch
 
@@ -274,4 +274,4 @@ Downloading dataset ds_q76gp0s33d01 to directory fetched/ ... done.
 
 You already have this data, since you just created this dataset by uploading it. But, you could now clean up your local system by removing your local files, then restore your dataset from Beaker in the future with `beaker dataset fetch`. Or, easily share with others or migrate an experiment to a new machine.
 
-If all of the above is working for you, you should proceed to create your own experiment spec, which is the [next example](third.md).
+If all of the above is working for you, you should proceed to create your own experiment spec, which is the [next example](spec.md).
