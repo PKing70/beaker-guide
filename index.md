@@ -6,7 +6,7 @@ nav_order: 1
 
 # User Guide
 
-[Beaker](https://beaker-pub.allenai.org) is a collaborative platform for
+[Beaker](https://beaker.org) is a collaborative platform for
 rapid, reproducible research.
 
 Here is an overview of the Beaker documentation:
