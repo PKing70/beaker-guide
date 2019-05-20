@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Create an Experiment Spec
-parent: Get Started
-nav_order: 16  
+nav_exclude: true
 ---
-
 # Create an Experiment Spec
 
 In this example, you'll run your experiment using your blueprint from the CLI and also create a corresponding experiment spec.
