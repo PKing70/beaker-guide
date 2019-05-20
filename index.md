@@ -16,5 +16,5 @@ Here is an overview of the Beaker documentation:
 | [Install](/docs/start/install.md) | [Images](/docs/concept/blueprints.md) | [Beaker site](/docs/howto/setting.md) | [Examples](/docs/example.md) | 
 | [Your First Experiment](/docs/start/experiment.md) | [Datasets](/docs/concept/datasets.md) | [Reporting](/docs/howto/reporting.md) | [Licenses](/docs/beaker.html) | 
 | [Image and dataset](/docs/start/blueprint.md) | [Experiments](/docs/concept/experiments.md) | [Settings](/docs/howto/setting.md) | [Terms of Use](https://beaker.org/tos) | 
-| [Experiment spec](/docs/start/blueprint.md) | [Groups](/docs/concept/groups.md) | [Commands (CLI)](/docs/cli.md) | [Terms of Use](https://beaker.org/tos) | 
+| [Experiment spec](/docs/start/blueprint.md) | [Groups](/docs/concept/groups.md) | [Commands (CLI)](/docs/cli.md) | [Releases](https://github.com/allenai/beaker/releases) | 
 
