@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Install Beaker
-parent: Get Started
-nav_order: 10
+nav_exclude: true
 ---
 
 # Set up Beaker
