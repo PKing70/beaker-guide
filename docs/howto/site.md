@@ -7,6 +7,8 @@ nav_order: 30
 
 # Beaker Site
 
+Sign in to [Beaker.org](https://beaker.org) to manage your account, permissions, and to report useful metrics about experiments and datasets.
+
 ## Experiments
 
 Search and sort experiments by yourself, others, or by a specified timeframe.
