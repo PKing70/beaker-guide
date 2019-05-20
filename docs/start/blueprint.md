@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blueprint and Dataset
+title: Create a Blueprint and Dataset
 parent: Get Started
 nav_order: 14  
 ---
