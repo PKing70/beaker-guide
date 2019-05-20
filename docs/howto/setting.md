@@ -19,13 +19,13 @@ To edit details such as **Name** or **Institution**, click the pencil icon next 
 
 To get or change your secret authentication token, click **Generate User Token**.
 
-<img src="../images/token.png" width="766">
+<img src="../images/token.png" width="383">
 
 ## Comet.ml
 
 Link your [Comet.ml](https://www.comet.ml) username to Beaker, or [create an account](https://github.com/beaker/comet-guide/blob/master/README.md) by enabling Comet in your Beaker spec. 
 
-<img src="../images/comet.png" width="758">
+<img src="../images/comet.png" width="379">
 
 ## Beaker CLI
 
