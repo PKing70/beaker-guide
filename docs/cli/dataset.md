@@ -17,7 +17,7 @@ Flags:
                  --help-man).
   -v, --version  Show application version.
       --debug    Print verbose stack traces on error.
-      --addr="https://beaker-pub.allenai.org"  
+      --addr="https://beaker.org"  
                  Address of the Beaker service.
 
 Subcommands:
@@ -28,11 +28,14 @@ Subcommands:
     Fetch an existing dataset
 
   rename [<flags>] <dataset> <new-name>
-    Rename an dataset
+    Rename a dataset
 
   stream-file [<flags>] <dataset> [<file>]
     Stream a single file from an existing dataset to stdout
 
   inspect [<flags>] <dataset>...
     Display detailed information about one or more datasets
- ```
+ 
+  ls [<flags>] <dataset> [<prefix>]
+    List files in a dataset.
+ ```  
