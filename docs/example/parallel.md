@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Count Words in Parallel
+title: Parallel
 parent: Examples
 nav_order: 42
 ---
