@@ -33,7 +33,7 @@ Next, you should use the Beaker CLI to run the same experiment from your local m
 
 For these steps to work, you must have completed [installing Beaker](install.md). When installed:
 
-1. From the existing [MNIST example](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe) experiment page on Beaker.org, click the **Spec** tab.
+1. From the existing [MNIST example](https://beaker.org/ex/ex_zvtqxr5dlpqe) experiment page on Beaker.org, click the **Spec** tab.
 
 ![Spec for MNIST example](../images/ex_spec.png)
 
