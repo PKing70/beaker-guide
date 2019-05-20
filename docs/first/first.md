@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Your First Beaker Experiment
-parent: Get Started
-nav_order: 12
+nav_exclude: true
 ---
-
 # Your First Beaker Experiment 
 
 Beaker manages experiments as Docker containers combined with additional metadata to make your code and data easy to share and replicate. To show you how to do this with "real" code and data, this tutorial will show you how to train a Python Pytorch model using LeCun's MNIST dataset of images of handwritten digits.
