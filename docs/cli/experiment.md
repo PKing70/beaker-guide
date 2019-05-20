@@ -17,7 +17,7 @@ Flags:
                  --help-man).
   -v, --version  Show application version.
       --debug    Print verbose stack traces on error.
-      --addr="https://beaker-pub.allenai.org"  
+      --addr="https://beaker.org"  
                  Address of the Beaker service.
 
 Subcommands:
