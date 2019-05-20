@@ -13,7 +13,7 @@ To edit details such as **Name** or **Institution**, click the pencil icon next 
 
 **Note:** You can also see your unique **ID** in this box.
 
-<img src="../images/user_detail.png" width="760">
+<img src="../images/user_detail.png" width="380">
 
 ## User Token
 
