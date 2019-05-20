@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Create Your Blueprint
-parent: Get Started
 nav_exclude: true
 ---
 # Create a Blueprint and Dataset 
