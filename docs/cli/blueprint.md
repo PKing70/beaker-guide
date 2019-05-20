@@ -10,6 +10,7 @@ nav_order: 50
 ```
 Beaker "blueprints" are now called "images", and all "blueprint" commands will be removed soon.
 Please update to "image" commands to ensure a smooth transition.
+
 usage: beaker blueprint [<flags>] <command> [<args> ...]
 
 Manage blueprints
