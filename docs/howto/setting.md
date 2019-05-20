@@ -13,6 +13,10 @@ To edit details such as **Name** or **Institution**, click the pencil icon next 
 
 **Note:** You can also see your unique **ID** in this box.
 
+
+![Beaker page for MNIST example](../images/beaker_ex.png)
+
+
 ![User details](../images/user_detail.png)
 
 ## User Token
