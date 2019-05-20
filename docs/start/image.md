@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Create a Blueprint and Dataset
+title: Create an Image and Dataset
 parent: Get Started
 nav_order: 14  
 ---
 
-# Create a Blueprint and Dataset 
+# Create an Image and Dataset 
 
-In this step, you'll use existing experiment code, data, and a Docker file. You'll define your own Beaker *blueprint*, to define and manage the experiment you will run, and a Beaker *dataset* to hold the source data. This example locally reproduces the existing MNIST experiment of the [prior example](first.md). 
+In this step, you'll use existing experiment code, data, and a Docker file. You'll define your own Beaker *image*, to define and manage the experiment you will run, and a Beaker *dataset* to hold the source data. This example locally reproduces the existing MNIST experiment of the [prior example](first.md). 
 
 Don't worry if you don't know much about Python, Pytorch, or MNIST data; you don't need to. Rather, this exercise simply shows you how to run a full experiment with Beaker. You should then be able to apply these concepts to your own code, data, and experiments, to manage them with Beaker.
 
@@ -104,7 +104,6 @@ $ docker build -t mymnist .
 You should see the Docker steps complete, and conclude successfully with a message such as:
 ```
 ...
-...
 Successfully tagged mymnist:latest
 ```
 This Docker CLI command instructed Docker to build an image based on the files at the current directory, using the Dockerfile that you cloned to this location, and you tagged it `mynist`. 
@@ -160,12 +159,12 @@ Either should produce CLI output such as:
 ]
 ```
 
-### Pull a blueprint
+### Pull an image
 
-You can pull your blueprint to your local machine at any time with `beaker blueprint pull`.
+You can pull your image to your local machine at any time with `beaker image pull`.
 
 ```
-$ beaker blueprint pull mymnist
+$ beaker image pull mymnist
 Pulling gcr.io/ai2-beaker-core/public/bduufrl06q5ner2l0440 ...
 latest: Pulling from ai2-beaker-core/public/bduufrl06q5ner2l0440
 Digest: sha256:4c70545c15cca8d30b3adfd004a708fcdec910f162fa825861fe138200f80e19
@@ -178,7 +177,7 @@ internally assigned tag  `gcr.io/ai2-beaker-core/public/bduufrl06q5ner2l0440` by
 a more human-friendly tag, set it with an additional argument:
 
 ```
-$ beaker blueprint pull mymnist friendly-name
+$ beaker image pull mymnist friendly-name
 ```
 
 ## Create a dataset
@@ -202,7 +201,7 @@ $ beaker dataset create --name mymnist-dataset ./data
 Uploading mymnist-dataset (ds_q76gp0s33d01)...
 Done.
 ```
-Notice that the dataset is assigned a unique ID (above, `ds_q76gp0s33d01`; yours will differ) in addition to the name we chose (`mymnist-dataset`). Like blueprints, datasets can be referred to by its name or ID. A dataset can be renamed, but its ID is guaranteed to remain stable. The following two commands are equivalent:
+Notice that the dataset is assigned a unique ID (above, `ds_q76gp0s33d01`; yours will differ) in addition to the name we chose (`mymnist-dataset`). Like images, datasets can be referred to by its name or ID. A dataset can be renamed, but its ID is guaranteed to remain stable. The following two commands are equivalent:
 
 ```bash
 $ beaker dataset inspect mymnist-dataset
