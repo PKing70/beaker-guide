@@ -50,10 +50,10 @@ Make sure the experiment ID matches the specific experiment you want to re-run, 
 You should see the following output:
 
 ```bash
-Experiment ex_zvtqxr5dlpqe submitted. See progress at https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe
+Experiment ex_zvtqxr5dlpqe submitted. See progress at https://beaker.org/ex/ex_zvtqxr5dlpqe
 ```
 
-You can see your experiments tasks progress to completion at the URL provided by this output (for example, [https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe](https://beaker-pub.allenai.org/ex/ex_zvtqxr5dlpqe)).
+You can see your experiments tasks progress to completion at the URL provided by this output (for example, [https://beaker.org/ex/ex_zvtqxr5dlpqe](https://beaker.org/ex/ex_zvtqxr5dlpqe)).
 
 That's how an experiment is defined and shared by its spec, the YAML file containing the necessary metadata with which you can manage an experiment.
 
