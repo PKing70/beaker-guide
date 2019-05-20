@@ -67,8 +67,11 @@ Select **Permissions** to change a group's default:  **None** or **Read**.
 
 <img src="../images/group_details.png" width="1185">
 
-You can also click **Permissions** to change a dataset's default:  **None** or **Read**.
-
 ## Organizations
 
-To get or change your secret authentication token, click **Generate User Token**.
+On the right site of the Beaker site menu, by your username, is **Personal** or your organization name.
+
+Select your organization to switch organization contexts or to access **Settings**. If you are a Beaker system administrator, create new organizations by choosing **New...**. 
+
+<img src="../images/create_organization.png" width="516">
+
