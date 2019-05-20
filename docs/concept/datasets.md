@@ -135,7 +135,7 @@ as a Beaker experiment. The code for this experiment's image can be found
 
 ```bash
 beaker experiment run \
-    --blueprint example/list-files \
+    --image example/list-files \
     --env LIST_DIR=/data \
     --source my-file-dataset:/data/single \
     --source my-dir-dataset:/data/multi \
