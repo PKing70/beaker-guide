@@ -42,6 +42,9 @@ Commands:
   group [<flags>]
     Manage groups
 
+  image [<flags>]
+    Manage images
+    
   task [<flags>]
     Manage tasks
 
