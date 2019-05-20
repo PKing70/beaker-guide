@@ -13,23 +13,19 @@ To edit details such as **Name** or **Institution**, click the pencil icon next 
 
 **Note:** You can also see your unique **ID** in this box.
 
-
-![Beaker page for MNIST example](../images/beaker_ex.png)
-
-
-![User details](../images/user_detail.png)
+<img src="../images/user_detail.png" width="760">
 
 ## User Token
 
 To get or change your secret authentication token, click **Generate User Token**.
 
-![User token](../images/token.png)
+<img src="../images/token.png" width="766">
 
 ## Comet.ml
 
 Link your [Comet.ml](https://www.comet.ml) username to Beaker, or [create an account](https://github.com/beaker/comet-guide/blob/master/README.md) by enabling Comet in your Beaker spec. 
 
-![Comet.ml](../images/comet.png)
+<img src="../images/comet.png" width="758">
 
 ## Beaker CLI
 
