@@ -38,13 +38,36 @@ Search and sort datasets of your or others' experiments, or by a specified timef
 
 Select a dataset to show its **Description**, **Provenance**, **Contents**, and **ID**.
 
-You can also click **Permissions** to change a dataset's default:  **None** or **Read**.
+Select **Permissions** to change a dataset's default:  **None** or **Read**.
 
 <img src="../images/dataset_details.png" width="1186">
 
 ## Groups
 
-To get or change your secret authentication token, click **Generate User Token**.
+Search and sort groups of your or others' experiments, or by a specified timeframe. 
+
+### Actions
+
+Select groups in the list, then choose:
+
+* **Delete Groups** to remove them from the system
+* **Reset Search** to clear the current search filter
+
+**Note:** To create a group or add experiments to a group, choose **Experiments** from the Beaker site menu, as above.
+
+<img src="../images/groups.png" width="1187">
+
+### Group Details
+
+Select a group to show and manage its **Comparisons**, or to **Export to CSV**.
+
+Select a comparison to specify its Metrics and Environment Variables.
+
+Select **Permissions** to change a group's default:  **None** or **Read**.
+
+<img src="../images/group_details.png" width="1185">
+
+You can also click **Permissions** to change a dataset's default:  **None** or **Read**.
 
 ## Organizations
 
