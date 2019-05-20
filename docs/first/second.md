@@ -2,9 +2,8 @@
 layout: default
 title: Create Your Blueprint
 parent: Get Started
-nav_order: 14  
+nav_exclude: true
 ---
-
 # Create a Blueprint and Dataset 
 
 In this step, you'll use existing experiment code, data, and a Docker file. You'll define your own Beaker *blueprint*, to define and manage the experiment you will run, and a Beaker *dataset* to hold the source data. This example locally reproduces the existing MNIST experiment of the [prior example](first.md). 
