@@ -6,7 +6,7 @@ nav_exclude: true
 
 # Beaker
 
-[Beaker](https://beaker-pub.allenai.org) is a collaborative platform for
+[Beaker](https://beaker.org) is a collaborative platform for
 rapid, reproducible research.
 
 [About blueprints](https://github.com/PKing70/beaker/blob/master/docs/blueprints.md)
