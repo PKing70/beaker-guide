@@ -7,12 +7,15 @@ nav_order: 31
 
 # Reporting
 
-## User Details
+Review and sort usage metrics.
 
-To edit details such as **Name** or **Institution**, click the pencil icon next to the item and enter a new value.
+## Show reports
 
-**Note:** You can see your unique ID in this box.
+Specify a specific date range or a month, quarter, or yearly time period for any or all teams.
 
-## User Token
+## Metrics
 
-To get or change your secret authentication token, click **Generate User Token**.
+Measure costs, GPU compute, machine time, or experiments.
+
+<img src="../images/usage.png" width="882">
+
